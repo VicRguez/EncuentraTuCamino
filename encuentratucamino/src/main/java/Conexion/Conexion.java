@@ -27,8 +27,7 @@ import javax.swing.JOptionPane;
  * @author Usuario
  */
 public class Conexion {
-    private final String DB=System.getenv("DB") ;
-   
+    private final String DB=System.getenv("DB");
     private final String USER=System.getenv("USER");
     private final String PASS=System.getenv("PASS");
     private final String URL=System.getenv("URL");
