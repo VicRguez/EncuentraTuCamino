@@ -27,11 +27,11 @@ import javax.swing.JOptionPane;
  * @author Usuario
  */
 public class Conexion {
-    private final String DB="GHAxIrzmRa";
+    private final String DB=System.getenv("DB") ;
    
-    private final String USER="GHAxIrzmRa";
-    private final String PASS="4a2v3BKtJa";
-    private final String URL="jdbc:mysql://remotemysql.com:3306/"+DB+"?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private final String USER=System.getenv("USER");
+    private final String PASS=System.getenv("PASS");
+    private final String URL=System.getenv("URL");
     
       
     public Connection openConnection() {
