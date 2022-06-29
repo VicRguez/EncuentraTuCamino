@@ -34,9 +34,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Execute script
-        env:
-            DB: ${{ secrets.DB }}
-            PASS: ${{ secrets.PASS }}
-            URL: ${{ secrets.URL }}
-            USER: ${{ secrets.USER }}          
+                
